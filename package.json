@@ -1,0 +1,25 @@
+{
+  "name": "pico8-gpio-listener",
+  "version": "0.1.0",
+  "description": "Listen to changes to your PICO-8 game's GPIO pins",
+  "main": "pico8-gpio-listener.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/benwiley4000/pico8-gpio-listener.git"
+  },
+  "keywords": [
+    "pico-8",
+    "gpio",
+    "web",
+    "game-development"
+  ],
+  "author": "Ben Wiley",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/benwiley4000/pico8-gpio-listener/issues"
+  },
+  "homepage": "https://github.com/benwiley4000/pico8-gpio-listener#readme"
+}

@@ -1,0 +1,2 @@
+*.p8 linguist-language=Lua
+*.html linguist-generated=true
