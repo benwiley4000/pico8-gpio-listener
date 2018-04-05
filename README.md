@@ -45,7 +45,7 @@ gpio.subscribe(function(indices) {
     'The values ' +
     indices.map(function(i) { return gpio[i]; }).join(', ') +
     ' at indices ' + indices.join(', ') +
-    ' probably didn't change, but I am logging them anyway..'
+    ' probably didn\'t change, but I am logging them anyway..'
   );
 }, true);
 ```
