@@ -50,6 +50,23 @@ gpio.subscribe(function(indices) {
 }, true);
 ```
 
+## including via script tag
+
+You can download pico8-gpio-listener.js and include it in your page with a script tag:
+
+```html
+<script src="pico8-gpio-listener.js"></script>
+<script>
+  // your code here
+</script>
+```
+
+Or if you prefer to fetch it from a CDN:
+
+```html
+<script src="https://unpkg.com/pico8-gpio-listener"></script>
+```
+
 ## installing as a module
 
 You can also install from npm:
