@@ -19,7 +19,13 @@ var getP8Gpio;
     Object.seal(this);
   }
 
-  PicoGpioArray.prototype = Object.create(Array.prototype);
+  PicoGpioArray.prototype = Object.create(Array.prototype, {
+    // we must custom-specify length since we override the index setters
+    length: {
+      value: size,
+      writable: false
+    }
+  });
   PicoGpioArray.prototype.constructor = PicoGpioArray;
 
   // listener callback is required. second argument (verbose) is a boolean
