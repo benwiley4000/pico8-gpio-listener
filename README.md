@@ -45,9 +45,28 @@ gpio.subscribe(function(indices) {
     'The values ' +
     indices.map(function(i) { return gpio[i]; }).join(', ') +
     ' at indices ' + indices.join(', ') +
-    ' probably didn't change, but I am logging them anyway..'
+    ' probably didn\'t change, but I am logging them anyway..'
   );
 }, true);
+```
+
+## including via script tag
+
+You can download pico8-gpio-listener.js and include it in your page with a script tag:
+
+```html
+<script src="pico8-gpio-listener.js"></script>
+<script>
+  // your code here
+</script>
+```
+
+(It's better to specify a specific version string rather than letting unpkg serve you the latest version each time the page is fetched; try opening https://unpkg.com/pico8-gpio-listener in a web browser first so it resolves to a more specific URL, then include that as your script `src`.)
+
+Or if you prefer to fetch it from a CDN:
+
+```html
+<script src="https://unpkg.com/pico8-gpio-listener"></script>
 ```
 
 ## installing as a module
