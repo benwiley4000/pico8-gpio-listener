@@ -61,6 +61,8 @@ You can download pico8-gpio-listener.js and include it in your page with a scrip
 </script>
 ```
 
+(It's better to specify a specific version string rather than letting unpkg serve you the latest version each time the page is fetched; try opening https://unpkg.com/pico8-gpio-listener in a web browser first so it resolves to a more specific URL, then include that as your script `src`.)
+
 Or if you prefer to fetch it from a CDN:
 
 ```html
