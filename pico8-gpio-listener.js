@@ -2,7 +2,10 @@ var getP8Gpio;
 
 (function() {
   getP8Gpio = _getP8Gpio;
+  // constants
   var size = 8;
+  // variables
+  var initialized = false;
 
   // extends Array prototype
   function PicoGpioArray() {
@@ -71,8 +74,10 @@ var getP8Gpio;
   }
 
   function _getP8Gpio() {
-    // initialize only once
-    window.pico8_gpio = window.pico8_gpio || new PicoGpioArray();
+    if (!initialized) {
+      window.pico8_gpio = new PicoGpioArray();
+      initialized = true;
+    }
     return window.pico8_gpio;
   }
 })();
