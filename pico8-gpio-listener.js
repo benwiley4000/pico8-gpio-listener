@@ -3,7 +3,7 @@ var getP8Gpio;
 (function() {
   getP8Gpio = _getP8Gpio;
   // constants
-  var size = 8;
+  var size = 128;
   // variables
   var initialized = false;
 

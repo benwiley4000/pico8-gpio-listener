@@ -1,6 +1,6 @@
 {
   "name": "pico8-gpio-listener",
-  "version": "0.2.1",
+  "version": "0.2.2",
   "description": "Listen to changes to your PICO-8 game's GPIO pins",
   "main": "pico8-gpio-listener.js",
   "scripts": {
